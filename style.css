@@ -109,18 +109,22 @@ body{
 /* Media query for phones */
 @media screen and (max-width: 767px) {
     .card {
-        width: 90%;
+        width: 90%; /* Adjust button width for smaller screens */
         padding: 30px 25px; /* Adjust padding for smaller screens */
     }
 
     .search input {
-        padding: 10px 14px; /* Adjust input padding for smaller screens */
+        padding: 1px 15px; /* Adjust input padding for smaller screens */
+        height: 48px; /* Adjust button height for smaller screens */
         font-size: 16px; /* Adjust font size for smaller screens */
+        margin-left: -5px;
+        margin-right: 3px;
+        
     }
 
     .search button {
-        width: 70px; /* Adjust button width for smaller screens */
-        height: 50px; /* Adjust button height for smaller screens */
+        width: 50px;/* Adjust button width for smaller screens */
+        height: 48px; /* Adjust button height for smaller screens */
     }
 
     .weather-icon {

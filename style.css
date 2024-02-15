@@ -105,32 +105,42 @@ body{
     display: none;
 }
 
-/* Media query for desktop */
-@media screen and (min-width: 768px) {
-    .card {
-        width: 70%;
-    }
-
-    .weather h1 {
-        font-size: 60px;
-    }
-
-    .details {
-        padding: 0 50px;
-    }
-}
 
 /* Media query for phones */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 767px) {
     .card {
-        width: 100%;
+        width: 90%;
+        padding: 30px 25px; /* Adjust padding for smaller screens */
+    }
+
+    .search input {
+        padding: 10px 16px; /* Adjust input padding for smaller screens */
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    .search button {
+        width: 50px; /* Adjust button width for smaller screens */
+        height: 50px; /* Adjust button height for smaller screens */
+    }
+
+    .weather-icon {
+        width: 120px; /* Decrease size of weather icon for smaller screens */
     }
 
     .weather h1 {
-        font-size: 30px;
+        font-size: 40px; /* Decrease font size of weather heading for smaller screens */
     }
 
     .details {
-        padding: 0 10px;
+        padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+
+    .col img {
+        width: 30px; /* Decrease size of icon images for smaller screens */
+    }
+
+    .humidity,
+    .wind {
+        font-size: 22px; /* Decrease font size of weather details for smaller screens */
     }
 }

@@ -121,9 +121,9 @@ body{
 }
 
 /* Media query for phones */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
     .card {
-        width: 90%;
+        width: 100%;
     }
 
     .weather h1 {
